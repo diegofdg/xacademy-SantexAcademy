@@ -1,29 +1,46 @@
 html {
+    font-size: 62.5%;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
 }
-body {
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
     margin: 0;
 }
-p {
-    margin-right: 40px;
+
+body {
+    font-size: 1.3rem;
+    margin: 0;
 }
+
 h1 {
-    margin: 0px 400px;
     text-align: center;
 }
 
-li{
+li {
     list-style-type: none;
-    margin-right: 35px;
+    margin-right: 3.5rem;
 }
+
+li:last-of-type {
+    margin-right: 0;
+}
+
 button.redondo {
     background-color: white;
     border: 2px solid black;
     border-radius: 25px;
-    padding: 0px 20px;
-    height: 32px;
+    padding: .9rem 2rem;
+    height: 3.6rem;
+    display: inline-block;
+    font-size: 1.2rem;
 }
+
 div#introduction-actions {
     display: flex;
     justify-content: center;
@@ -34,7 +51,7 @@ div#header {
     border-bottom: 1px solid gray;
     display: flex;
     align-items: center;
-    padding: 10px 46px 8px;
+    padding: 2rem 3.9rem 1.7rem;
     justify-content: space-between;
 }
 
@@ -44,17 +61,43 @@ ul#header-right {
 }
 
 div#introduction {
-    padding: 48px;
+    margin: 0 auto;
+    width: 60rem;
 }
 
-.redondo-left {
+button.redondo-left {
     margin-left: 14px;
+    border: 2px solid rgb(107,83,240);
+}
+
+button.redondo-left span,
+button.redondo-left i {
+    color: rgb(107,83,240);
 }
 
 .iconos {
-    margin-right: 20x;
+    margin-right: 20px;
 }
 
 .icono {
     margin-right: 0;
+}
+
+span {
+    position: relative;
+    display: inline-block;
+    vertical-align: center;
+}
+
+i {
+    font-size: 1.2rem;
+    display:inline-block;
+    vertical-align: center;
+}
+
+.texto-principal {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0 7px;
+    padding: 8rem 0 1rem 0;
 }
