@@ -41,6 +41,11 @@ button.redondo {
     font-size: 1.2rem;
 }
 
+div#introduction-text {
+    margin: 0 auto;
+    width: 60rem;
+}
+
 div#introduction-actions {
     display: flex;
     justify-content: center;
@@ -53,6 +58,7 @@ div#header {
     align-items: center;
     padding: 2rem 3.9rem 1.7rem;
     justify-content: space-between;
+    background-color: white;
 }
 
 ul#header-right {
@@ -61,8 +67,9 @@ ul#header-right {
 }
 
 div#introduction {
-    margin: 0 auto;
-    width: 60rem;
+    background-color: white;
+
+    padding-bottom: 9rem;
 }
 
 button.redondo-left {
@@ -100,4 +107,32 @@ i {
     font-weight: 600;
     margin: 0 7px;
     padding: 8rem 0 1rem 0;
+}
+
+.fondo-fundacion {
+    
+    max-width: 100%;
+    height: calc(100vh -80px);
+    background-repeat: no-repeat;
+    position: fixed;
+    top: -25rem;
+    z-index: -1;
+}
+
+div#impacto-section {
+    background-color: #201b24;
+    color: #FFFFFF;
+}
+
+div#transparente {
+    background-color: transparent;
+    color: transparent;
+    
+    width: 50rem;
+    height: 50rem;
+    z-index: 100;
+}
+
+div#programas {
+    background-color: #FFFFFF;
 }
