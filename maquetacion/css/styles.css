@@ -111,7 +111,7 @@ i {
 
 .texto-principal {
     font-size: 2.8rem;
-    font-weight: 600;
+    font-weight: 600;   
     margin: 0 7px;
     padding: 8rem 0 1rem 0;
 }
@@ -155,6 +155,7 @@ div#impacto-section {
     width: 30%;
     font-size: 1.4rem;
     line-height: 2.1rem;
+    font-weight: 600;
 }
 
 .impacto-left > h2 {
@@ -177,6 +178,7 @@ div#impacto-section {
 
 .numeros {
     font-size: 5rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
 }
@@ -189,4 +191,56 @@ div#impacto-section {
 
 span.texto {
     color: rgb(140, 147, 156);
+}
+
+div#programas {
+    padding: 6rem 3.9rem;
+}
+
+div#programas > h2 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.programas {
+    display: flex;
+    gap: 10rem
+}
+
+.programas-right {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-weight: 400;
+}
+
+.programas-right > p {
+    margin-bottom: 2rem;
+}
+
+.programas-right-contenido {
+    align-self: center;
+    padding-right: 3rem;
+}
+
+.programas-right-contenido > img {
+    width: 20rem;
+}
+
+.programas-right-contenido > p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.programas-left > h2 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.programas-left > img {
+    max-width: 57.6rem;
+    border-radius: 0 30px 30px 30px;
 }
