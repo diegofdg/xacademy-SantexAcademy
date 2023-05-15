@@ -59,6 +59,9 @@ div#header {
     padding: 2rem 3.9rem 1.7rem;
     justify-content: space-between;
     background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 ul#header-right {
@@ -90,6 +93,10 @@ button.redondo-left i {
     margin-right: 0;
 }
 
+.fa-brands {
+    font-size: 1.4rem;
+}
+
 span {
     position: relative;
     display: inline-block;
@@ -109,8 +116,7 @@ i {
     padding: 8rem 0 1rem 0;
 }
 
-.fondo-fundacion {
-    
+.fondo-fundacion {    
     max-width: 100%;
     height: calc(100vh -80px);
     background-repeat: no-repeat;
@@ -126,8 +132,7 @@ div#impacto-section {
 
 div#transparente {
     background-color: transparent;
-    color: transparent;
-    
+    color: transparent;    
     width: 50rem;
     height: 50rem;
     z-index: 100;
@@ -135,4 +140,53 @@ div#transparente {
 
 div#programas {
     background-color: #FFFFFF;
+}
+
+div#impacto-section {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5rem;
+    padding-top: 12rem;
+    padding-bottom: 10rem;
+}
+
+.impacto-left {
+    width: 30%;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+.impacto-left > h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.impacto-right {
+    font-size: 1.4rem;
+    width: 30%;
+    display: flex;
+    gap: 5rem;
+}
+
+.impacto-numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.numeros {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.numeros > span {
+    font-size: 3rem;
+    color: rgb(107,83,240);
+    align-items: center;
+}
+
+span.texto {
+    color: rgb(140, 147, 156);
 }
