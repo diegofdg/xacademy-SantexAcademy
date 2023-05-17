@@ -312,3 +312,16 @@ div.card {
     color: rgb(140, 147, 156);
     margin-bottom: 1rem;
 }
+
+.alianzas-left > img {
+    max-width: 22.9rem;
+    border-radius: 0 30px 30px 30px;
+    filter: grayscale(100%);
+    opacity: 50%;
+}
+
+.alianzas-left > img:hover {
+    filter: grayscale(0%);
+    opacity: 100%;
+    cursor: pointer;
+}
