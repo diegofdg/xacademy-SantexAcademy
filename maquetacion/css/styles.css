@@ -201,7 +201,8 @@ div#capacitaciones {
 }
 
 div#programas > h2,
-div#capacitaciones > h2 {
+div#capacitaciones > h2,
+div#equipo > h2 {
     margin-bottom: 4rem;
     font-size: 3rem;
     font-weight: 600;
@@ -285,11 +286,15 @@ div.card {
 }
 
 #equipo {
+    background-color: rgb(244, 244, 245);
+    padding: 2rem 2rem 1.7rem;
+}
+
+.equipo {
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
-    background-color: rgb(244, 244, 245);
-    padding: 2rem 2rem 1.7rem;
+    
 }
 
 .equipo-card {
