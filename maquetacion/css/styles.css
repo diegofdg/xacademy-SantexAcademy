@@ -138,7 +138,8 @@ div#transparente {
     z-index: 100;
 }
 
-div#programas {
+div#programas,
+div#capacitaciones {
     background-color: #FFFFFF;
 }
 
@@ -193,54 +194,76 @@ span.texto {
     color: rgb(140, 147, 156);
 }
 
-div#programas {
+div#programas,
+div#capacitaciones {
     padding: 6rem 3.9rem;
 }
 
-div#programas > h2 {
+div#programas > h2,
+div#capacitaciones > h2 {
     margin-bottom: 4rem;
     font-size: 3rem;
     font-weight: 600;
 }
 
-.programas {
+.programas,
+.capacitaciones {
     display: flex;
     gap: 10rem
 }
 
-.programas-right {
+.programas-right,
+.capacitaciones-right {
     display: flex;
     justify-content: center;
     font-size: 1.4rem;
     line-height: 2.1rem;
     font-weight: 400;
+    padding: 3rem;
 }
 
-.programas-right > p {
+.programas-right > p,
+.capacitaciones-right > p {
     margin-bottom: 2rem;
 }
 
-.programas-right-contenido {
+.programas-right-contenido,
+.capacitaciones-right-contenido {
     align-self: center;
-    padding-right: 3rem;
 }
 
-.programas-right-contenido > img {
+.programas-right-contenido > img,
+.capacitaciones-right-contenido > img {
     width: 20rem;
 }
 
-.programas-right-contenido > p {
+.programas-right-contenido > p,
+.capacitaciones-right-contenido > p {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.programas-left > h2 {
+.programas-left > h2,
+.capacitaciones-left > h2 {
     margin-bottom: 4rem;
     font-size: 3rem;
     font-weight: 600;
 }
 
-.programas-left > img {
+.programas-left.left > img,
+.capacitaciones-left.left > img {
     max-width: 57.6rem;
     border-radius: 0 30px 30px 30px;
+}
+
+.programas-left.right > img,
+.capacitaciones-left.right > img {
+    max-width: 57.6rem;
+    border-radius: 30px 30px 0 30px;
+}
+
+div.programas-left h2,
+div.capacitaciones-left h2 {
+    display: inline;
+    background-color: red;
 }
