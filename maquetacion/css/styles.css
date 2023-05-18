@@ -1,3 +1,5 @@
+/** Globales **/
+
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -25,76 +27,11 @@ h1 {
 li {
     list-style-type: none;
     margin-right: 3.5rem;
+    font-weight: 500;
 }
 
 li:last-of-type {
     margin-right: 0;
-}
-
-button.redondo {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: .9rem 2rem;
-    height: 3.6rem;
-    display: inline-block;
-    font-size: 1.2rem;
-}
-
-div#introduction-text {
-    margin: 0 auto;
-    width: 60rem;
-}
-
-div#introduction-actions {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-div#header {
-    border-bottom: 1px solid gray;
-    display: flex;
-    align-items: center;
-    padding: 2rem 3.9rem 1.7rem;
-    justify-content: space-between;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-ul#header-right {
-    display: flex;
-    align-items: center;
-}
-
-div#introduction {
-    background-color: white;
-    padding-bottom: 9rem;
-}
-
-button.redondo-left {
-    margin-left: 14px;
-    border: 2px solid rgb(107,83,240);
-}
-
-button.redondo-left span,
-button.redondo-left i {
-    color: rgb(107,83,240);
-}
-
-.iconos {
-    margin-right: 20px;
-}
-
-.icono {
-    margin-right: 0;
-}
-
-.fa-brands {
-    font-size: 1.4rem;
 }
 
 span {
@@ -109,14 +46,107 @@ i {
     vertical-align: center;
 }
 
-.texto-principal {
-    font-size: 2.8rem;
-    font-weight: 600;   
-    margin: 0 7px;
-    padding: 8rem 0 1rem 0;
+/** Header **/
+
+header#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    padding: 2rem 3.9rem 1.7rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 
-.fondo-fundacion {    
+ul.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu > li:hover {
+    cursor: pointer;
+    color: rgb(107,83,240);
+}
+
+button.redondo {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: .9rem 2rem;
+    height: 3.6rem;
+    display: inline-block;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button.redondo:hover {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.icono-left {
+    margin-right: 20px;
+}
+
+.icono-right {
+    margin-right: 0;
+}
+
+.fa-brands {
+    font-size: 1.4rem;
+}
+
+/** Section Introduccion **/
+
+section#introduccion {
+    background-color: white;
+    padding-bottom: 9rem;
+}
+
+div.introduccion-texto {
+    margin: 0 auto;
+    width: 60rem;
+}
+
+.texto-principal {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0 7px;
+    padding: 16rem 0 1rem 0;
+}
+
+div.introduccion-acciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+button.redondo-left {
+    margin-left: 14px;
+    border: 2px solid rgb(107,83,240);
+}
+
+button.redondo-left span,
+button.redondo-left i {
+    color: rgb(107,83,240);
+}
+
+button.redondo-left:hover {
+    background-color:rgb(107,83,240);
+    color: #FFFFFF;
+}
+
+button.redondo-left:hover span,
+button.redondo-left:hover i {
+    color: #FFFFFF;
+}
+
+/** Fondo Imagen Fundacion **/
+
+.fondo-fundacion {
     max-width: 100%;
     height: calc(100vh -80px);
     background-repeat: no-repeat;
@@ -125,31 +155,17 @@ i {
     z-index: -1;
 }
 
-div#impacto-section {
-    background-color: #201b24;
-    color: #FFFFFF;
-}
+/** Section Impacto **/
 
-div#transparente {
-    background-color: transparent;
-    color: transparent;    
-    width: 50rem;
-    height: 50rem;
-    z-index: 100;
-}
-
-div#programas,
-div#capacitaciones {
-    background-color: #FFFFFF;
-}
-
-div#impacto-section {
+section#impacto {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     gap: 5rem;
+    margin: 0 auto;
     padding-top: 12rem;
     padding-bottom: 10rem;
+    background-color: #201b24;
+    color: white;
 }
 
 .impacto-left {
@@ -174,7 +190,7 @@ div#impacto-section {
 .impacto-numeros {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .numeros {
@@ -194,14 +210,29 @@ span.texto {
     color: rgb(140, 147, 156);
 }
 
-div#programas,
-div#capacitaciones {
+/** Section Transparente **/
+
+section#transparente {
+    width: 50rem;
+    height: 50rem;
+    z-index: 100;
+    background-color: transparent;
+    color: transparent;
+}
+
+/** Section Programas y Section Capacitaciones **/
+
+section#programas,
+section#capacitaciones,
+section#alianzas {
+    background-color: #FFFFFF;
     padding: 6rem 3.9rem;
 }
 
-div#programas > h2,
-div#capacitaciones > h2,
-div#equipo > h2 {
+section#programas > h2,
+section#capacitaciones > h2,
+section#equipo > h2,
+section#alianzas > h2 {
     margin-bottom: 4rem;
     font-size: 3rem;
     font-weight: 600;
@@ -263,37 +294,17 @@ div#equipo > h2 {
     border-radius: 30px 30px 0 30px;
 }
 
-div.programas-left h2,
-div.capacitaciones-left h2 {
-    display: inline;
-    background-color: red;
-}
+/** Section Equipo **/
 
-div .circular {
-    border: .2rem solid black;
-    border-radius: 50%;
-    padding: .5rem;
-}
-
-div.card {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    border-radius: 0 0 30px 0;
-}
-
-#equipo {
+section#equipo {
     background-color: rgb(244, 244, 245);
     padding: 2rem 2rem 1.7rem;
 }
 
-.equipo {
+div.equipo {
     display: flex;
     flex-wrap: wrap;
     gap: 2.5rem;
-    
 }
 
 .equipo-card {
@@ -306,6 +317,15 @@ div.card {
     border-radius: 30px 30px 0 0px;
 }
 
+div.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0 0 30px 0;
+}
+
 .card > h5 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -316,6 +336,20 @@ div.card {
     color: rgb(140, 147, 156);
     margin-bottom: 1rem;
 }
+
+.card .icono-right i:hover {
+    background-color:rgb(107,83,240);
+    color: white;
+    border: .2rem solid rgb(107,83,240);
+}
+
+div .circular {
+    border: .2rem solid black;
+    border-radius: 50%;
+    padding: .5rem;
+}
+
+/** Section Alianzas **/
 
 .alianzas-left > img {
     max-width: 22.9rem;
@@ -330,27 +364,17 @@ div.card {
     cursor: pointer;
 }
 
-div#footer {
-    border-bottom: 1px solid gray;
-    display: flex;
-    align-items: center;
-    padding: 2rem 3.9rem 1.7rem;
-    justify-content: space-between;
-    background-color: white;
-    width: 100%;
-    background-color: #201b24;
-    color: #FFFFFF;
-    
-}
+/** Footer **/
 
-div#footer {
+footer#footer {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
-    /* gap: 4rem; */
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    border-bottom: 1px solid gray;
+    padding: 6rem 3.9rem;
+    background-color: #201b24;
+    color: white;
 }
 
 .footer-logo {
@@ -358,27 +382,30 @@ div#footer {
 
 }
 .footer-contenido {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    flex: 1;
     font-size: 1.4rem;
     font-weight: 600;
 }
 
 .footer-texto {
+    padding: 0 7rem 0 3rem;
     flex: 1.2;
     font-size: 1.2rem;
     font-weight: 400;
-    padding: 0 7rem 0 3rem;
     line-height: 1.8rem;
-    
 }
 
 .footer-contenido > li {
-    margin-right: 0;    
+    margin-right: 0;
     line-height: 2.1rem;
+}
+
+.footer-contenido > li:hover {
+    cursor: pointer;
 }
 
 .footer-contenido > li > p {

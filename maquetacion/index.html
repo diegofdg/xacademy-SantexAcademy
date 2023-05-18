@@ -12,12 +12,12 @@
     <title>Xacademy Clase 1 maquetacion</title>
 </head>
 <body>
-    <div id="header">
-        <div id="header-left">
+    <header id="header">
+        <div>
             <img src="./img/logo.svg">
         </div>
-        <div>
-            <ul id="header-right">
+        <nav>
+            <ul class="header-menu">
                 <li>Nosotros</li>
                 <li>Programas</li>
                 <li>Capacitaciones</li>
@@ -29,16 +29,17 @@
                         <i class="fa-solid fa-plus"></i>
                     </button>
                 </li>
-                <li class="iconos"><i class="fa-brands fa-instagram"></i></li>
-                <li class="icono"><i class="fa-brands fa-linkedin-in"></i></li>
+                <li class="icono-left"><i class="fa-brands fa-instagram"></i></li>
+                <li class="icono-right"><i class="fa-brands fa-linkedin-in"></i></li>
             </ul>
-        </div>
-    </div>
-    <div id="introduction">
-        <div id="introduction-text">
+        </nav>
+    </header>
+
+    <section id="introduccion">
+        <div class="introduccion-texto">
             <h1 class="texto-principal">Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
         </div>
-        <div id="introduction-actions">
+        <div class="introduccion-acciones">
             <button class="redondo">
                 <span>Contactanos</span>
                 <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
@@ -48,11 +49,13 @@
                 <i class="fa-solid fa-plus"></i>
             </button>
         </div>
-    </div>
-    
-    <img src="./img/twp-home.jpg" alt="imagen de fondo de la fundacion" class="fondo-fundacion">
+    </section>
 
-    <div id="impacto-section">
+    <section id="fondo-fundacion">
+        <img src="./img/twp-home.jpg" alt="imagen de fondo de la fundacion" class="fondo-fundacion">
+    </section>
+    
+    <section id="impacto">
         <div class="impacto-left">
             <h2>. Impacto</h2>
             <p>Buscamos construir alianzas y fortalecer vínculos para generar una transformación real en la comunidad. Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social</p>
@@ -62,11 +65,11 @@
             <p class="impacto-numeros"><span class="numeros"><span>+</span>50</span><span class="texto">Mentores</span></p>
             <p class="impacto-numeros"><span class="numeros">301</span><span class="texto">Participantes</span></p>
         </div>
-    </div>
+    </section>
 
-    <div id="transparente"></div>
+    <section id="transparente"></section>
 
-    <div id="programas">
+    <section id="programas">
         <h2>. Programas</h2>
         <div class="programas">
             <div class="programas-left left">
@@ -81,7 +84,7 @@
                         <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
                     </button>
                 </div>
-            </div>            
+            </div>
         </div>
 
         <div class="programas">
@@ -94,14 +97,14 @@
                         <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
                     </button>
                 </div>
-            </div>            
+            </div>
             <div class="programas-left right">
                 <img src="./img/robotica-educativa-07-600x400.jpg" alt="imagen robotica">
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="capacitaciones">
+    <section id="capacitaciones">
         <h2>. Capacitaciones</h2>
         <div class="capacitaciones">
             <div class="capacitaciones-left left">
@@ -116,7 +119,7 @@
                         <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
                     </button>
                 </div>
-            </div>            
+            </div>
         </div>
 
         <div class="capacitaciones">
@@ -129,13 +132,14 @@
                         <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
                     </button>
                 </div>
-            </div>            
+            </div>
             <div class="capacitaciones-left right">
                 <img src="./img/seguridad-informatica-para-infancias-600x398.jpg" alt="imagen seguridad informatica">
             </div>
         </div>
-    </div>
-    <div id="equipo">
+    </section>
+
+    <section id="equipo">
         <h2>. Equipo</h2>
         <div class="equipo">
             <div class="equipo-card">
@@ -143,7 +147,7 @@
                 <div class="card">
                     <h5>Juan Santiago</h5>
                     <p>Presidente</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -151,7 +155,7 @@
                 <div class="card">
                     <h5>Walter Abrigo</h5>
                     <p>Secretario</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -159,7 +163,7 @@
                 <div class="card">
                     <h5>Gabriela Fernandez</h5>
                     <p>Comisión Directiva</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -167,7 +171,7 @@
                 <div class="card">
                     <h5>Gabriel Dubini</h5>
                     <p>Tesorero</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -175,7 +179,7 @@
                 <div class="card">
                     <h5>Florencia D’Agostino</h5>
                     <p>Dirección Ejecutiva</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -183,7 +187,7 @@
                 <div class="card">
                     <h5>Celeste Torresi</h5>
                     <p>Comisión Directiva</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -191,7 +195,7 @@
                 <div class="card">
                     <h5>Lucia Jaimez</h5>
                     <p>Directora Academy</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -199,7 +203,7 @@
                 <div class="card">
                     <h5>Agustín Chino</h5>
                     <p>Coord. Área Inclusión Social</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
             <div class="equipo-card">
@@ -207,46 +211,44 @@
                 <div class="card">
                     <h5>Enzo Dotto</h5>
                     <p>Relaciones Institucionales</p>
-                    <div class="icono"><i class="fa-brands fa-linkedin-in circular"></i></div>
+                    <div class="icono-right"><i class="fa-brands fa-linkedin-in circular"></i></div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="programas">
+    <section id="alianzas">
         <h2>. Alianzas</h2>
-        <div class="programas">
+        <div class="alianzas">
             <div class="alianzas-left">
                 <img src="./img/alianza-santex-400x151.png" alt="imagen santex">
                 <img src="./img/alianza-att-400x151.png" alt="imagen att">
                 <img src="./img/alianza-banco-galicia-400x151.png" alt="imagen banco galicia">
                 <img src="./img/alianza-banco-alimentos-cordoba-400x151.png" alt="imagen banco alimentos">
                 <img src="./img/alianza-fundacion-scrum-400x151.png" alt="imagen scrum">
-            </div>            
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="footer">
+    <footer id="footer">
         <div class="footer-logo">
             <img src="./img/technology-with-purpose-white.svg">
         </div>
-
-                    <div class="footer-texto">
-                        <li>Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</li>
-                    </div>
-                
-                        <div class="footer-contenido">
-                            <li>NOSOTROS</li>
-                            <li>CONTACTO</li>
-                        </div>
-                        <div class="footer-contenido">
-                            <li>PROGRAMAS</li>
-                            <li>CAPACITACIONES</li>
-                        </div>
-                        <div class="footer-contenido">
-                            <li class="iconos"><i class="fa-brands fa-instagram"></i><p>INSTAGRAM</p></li>
-                            <li class="icono"><i class="fa-brands fa-linkedin-in"></i><p>LINKEDIN</p></li>
-                        </div>
-    </div>
+        <div class="footer-texto">
+            <li>Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.</li>
+        </div>
+        <div class="footer-contenido">
+            <li>NOSOTROS</li>
+            <li>CONTACTO</li>
+        </div>
+        <div class="footer-contenido">
+            <li>PROGRAMAS</li>
+            <li>CAPACITACIONES</li>
+        </div>
+        <div class="footer-contenido">
+            <li class="icono-left"><i class="fa-brands fa-instagram"></i><p>INSTAGRAM</p></li>
+            <li class="icono"><i class="fa-brands fa-linkedin-in"></i><p>LINKEDIN</p></li>
+        </div>
+    </footer>
 </body>
 </html>
