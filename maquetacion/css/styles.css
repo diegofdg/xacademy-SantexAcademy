@@ -72,7 +72,6 @@ ul#header-right {
 
 div#introduction {
     background-color: white;
-
     padding-bottom: 9rem;
 }
 
@@ -329,4 +328,60 @@ div.card {
     filter: grayscale(0%);
     opacity: 100%;
     cursor: pointer;
+}
+
+div#footer {
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3.9rem 1.7rem;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    background-color: #201b24;
+    color: #FFFFFF;
+    
+}
+
+div#footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    /* gap: 4rem; */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.footer-logo {
+    flex: 1.1;
+
+}
+.footer-contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.footer-texto {
+    flex: 1.2;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0 7rem 0 3rem;
+    line-height: 1.8rem;
+    
+}
+
+.footer-contenido > li {
+    margin-right: 0;    
+    line-height: 2.1rem;
+}
+
+.footer-contenido > li > p {
+    display: inline;
+    margin-left: 1rem;
 }
